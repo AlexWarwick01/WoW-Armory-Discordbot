@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+
+group 'warcraftlogsbot'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    //testing lol
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    //discord jda
+    compile 'net.dv8tion:JDA:4.0.0_54'
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.3.4'
+    // https://mvnrepository.com/artifact/com.ning/async-http-client
+    compile group: 'com.ning', name: 'async-http-client', version: '1.9.40'
+    // https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple
+    compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+    // https://mvnrepository.com/artifact/com.google.code.gson/gson
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.7'
+
+
+
+}
+
